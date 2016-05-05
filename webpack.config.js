@@ -2,6 +2,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 var options = require('./webpack.base.js');
 options.entry = './src';
 options.output = {
+  libraryTarget: 'umd',
   filename: 'index.js',
   path: './lib'
 };
