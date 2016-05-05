@@ -6,5 +6,7 @@ coverage
 .jshintrc
 npm-debug.log
 src/
-examples/
+example/
+webpack.base.js
 webpack.config.js
+webpack.example.config.js
