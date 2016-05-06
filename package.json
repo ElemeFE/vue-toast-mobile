@@ -4,7 +4,7 @@
   "description": "A mobile toast component for vue.js",
   "main": "lib/index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "cooking build",
     "prepublish": "npm run build"
   },
   "repository": {
