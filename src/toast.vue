@@ -1,5 +1,5 @@
 <template>
-  <div class="toast {{customClass}}" transition="pop-fade">
+  <div class="toast {{customClass}}" transition="toast-pop">
     <span class="toast-text">{{ message }}</span>
   </div>
 </template>
@@ -42,12 +42,12 @@
     transform: translate(-50%, 0);
   }
 
-  .pop-fade-transition {
+  .toast-pop-transition {
     transition: opacity .3s linear;
   }
 
-  .pop-fade-enter,
-  .pop-fade-leave {
+  .toast-pop-enter,
+  .toast-pop-leave {
     opacity: 0;
   }
 </style>
