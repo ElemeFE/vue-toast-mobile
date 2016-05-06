@@ -7,6 +7,5 @@ coverage
 npm-debug.log
 src/
 example/
-webpack.base.js
-webpack.config.js
-webpack.example.config.js
+cooking.config.js
+cooking.example.config.js
