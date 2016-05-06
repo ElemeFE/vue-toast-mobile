@@ -1,6 +1,6 @@
 {
   "name": "vue-toast-mobile",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A mobile toast component for vue.js",
   "main": "lib/index.js",
   "scripts": {
