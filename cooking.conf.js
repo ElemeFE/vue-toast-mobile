@@ -16,6 +16,6 @@ cooking.set({
   extends: ['vue', 'lint']
 });
 
-cooking.add('externals.vue', 'Vue');
+cooking.add('externals.vue', 'vue');
 
 module.exports = cooking.resolve();
