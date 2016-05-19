@@ -30,7 +30,7 @@ export default function(options) {
     duration = 3000;
     position = 'middle';
     className = '';
-    iconClass= '';
+    iconClass = '';
   } else {
     message = options.message;
     duration = options.duration || 3000;
