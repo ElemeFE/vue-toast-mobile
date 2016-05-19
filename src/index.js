@@ -23,18 +23,20 @@ let returnAnInstance = function(instance) {
 export default function(options) {
   options = options || {};
 
-  let message, position, duration, className;
+  let message, position, duration, className, iconClass;
 
   if (typeof options === 'string') {
     message = options;
     duration = 3000;
     position = 'middle';
     className = '';
+    iconClass= '';
   } else {
     message = options.message;
     duration = options.duration || 3000;
     position = options.position || 'middle';
     className = options.className || '';
+    iconClass = options.iconClass || '';
   }
 
   let instance = getAnInstance();
@@ -42,6 +44,7 @@ export default function(options) {
   instance.message = message;
   instance.position = position;
   instance.className = className;
+  instance.iconClass = iconClass;
 
   Vue.nextTick(function() {
     instance.$appendTo(document.body);
