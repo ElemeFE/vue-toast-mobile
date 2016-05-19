@@ -37,6 +37,7 @@ Toast({
 | position  | location of the toast relative to viewport     | 'top' 'bottom' 'middle' | 'middle' | 
 | duration  | time before the toast vanishes, in millisecond |                         | 3000     |
 | className | custom class name of the toast                 |                         |          |
+| iconClass | class name of the optional icon font           |                         |          |
 
 # License
 MIT
