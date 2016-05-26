@@ -1,9 +1,10 @@
 {
   "name": "vue-toast-mobile",
-  "version": "0.0.9",
+  "version": "0.1.2",
   "description": "A mobile toast component for vue.js",
   "main": "lib/index.js",
   "scripts": {
+    "dev": "cooking watch -c cooking.conf.js,cooking.example.conf.js",
     "build": "cooking build",
     "prepublish": "npm run build"
   },

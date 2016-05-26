@@ -1,12 +1,12 @@
 <template>
-  <div class="kebab-toast {{ customClass }}" transition="kebab-toast-pop" :style="{ 'padding': iconClass === '' ? '10px' : '20px' }">
-    <i class="kebab-toast-icon {{ iconClass }}" v-if="iconClass !== ''"></i>
-    <span class="kebab-toast-text">{{ message }}</span>
+  <div class="mint-toast {{ customClass }}" transition="mint-toast-pop" :style="{ 'padding': iconClass === '' ? '10px' : '20px' }">
+    <i class="mint-toast-icon {{ iconClass }}" v-if="iconClass !== ''"></i>
+    <span class="mint-toast-text" :style="{ 'padding-top': iconClass === '' ? '0' : '10px' }">{{ message }}</span>
   </div>
 </template>
 
 <style>
-  @component-namespace kebab {
+  @component-namespace mint {
     @component toast {
       position: fixed;
       max-width: 80%;
