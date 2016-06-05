@@ -24,6 +24,7 @@
       }
 
       @descendent text {
+        font-size: 14px;
         display: block;
         text-align: center;
       }
