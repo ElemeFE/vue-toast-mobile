@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/Elemefe/vue-toast-mobile/issues"
   },
+  "devDependencies": {
+    "vue": "^2.0.2",
+    "cooking-vue2": "^0.2.3"
+  },
   "homepage": "https://github.com/Elemefe/vue-toast-mobile#readme"
 }
