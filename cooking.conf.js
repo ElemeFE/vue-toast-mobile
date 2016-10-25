@@ -5,7 +5,6 @@ cooking.set({
     index: './src/index.js'
   },
   dist: './lib',
-  use: 'vue',
   publicPath: '/lib/',
   template: false,
 
@@ -14,7 +13,7 @@ cooking.set({
   moduleName: 'VueToastMobile',
   extractCSS: 'index.css',
 
-  extends: ['vue', 'lint', 'saladcss']
+  extends: ['vue2', 'lint', 'saladcss']
 });
 
 cooking.add('externals.vue', 'vue');

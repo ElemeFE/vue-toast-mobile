@@ -1,6 +1,6 @@
 {
   "name": "vue-toast-mobile",
-  "version": "0.1.2",
+  "version": "2.0.0",
   "description": "A mobile toast component for vue.js",
   "main": "lib/index.js",
   "scripts": {
@@ -16,6 +16,10 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Elemefe/vue-toast-mobile/issues"
+  },
+  "devDependencies": {
+    "vue": "^2.0.2",
+    "cooking-vue2": "^0.2.3"
   },
   "homepage": "https://github.com/Elemefe/vue-toast-mobile#readme"
 }

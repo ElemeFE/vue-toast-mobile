@@ -1,8 +1,10 @@
 <template>
-  <div class="mint-toast {{ customClass }}" transition="mint-toast-pop" :style="{ 'padding': iconClass === '' ? '10px' : '20px' }">
-    <i class="mint-toast-icon {{ iconClass }}" v-if="iconClass !== ''"></i>
-    <span class="mint-toast-text" :style="{ 'padding-top': iconClass === '' ? '0' : '10px' }">{{ message }}</span>
-  </div>
+  <transition name="mint-toast-pop">
+    <div class="mint-toast" v-show="visible" :class="customClass" :style="{ 'padding': iconClass === '' ? '10px' : '20px' }">
+      <i class="mint-toast-icon" :class="iconClass" v-if="iconClass !== ''"></i>
+      <span class="mint-toast-text" :style="{ 'padding-top': iconClass === '' ? '0' : '10px' }">{{ message }}</span>
+    </div>
+  </transition>
 </template>
 
 <style>
@@ -16,6 +18,7 @@
       box-sizing: border-box;
       text-align: center;
       z-index: 1000;
+      transition: opacity .3s linear;
 
       @descendent icon {
         display: block;
@@ -47,11 +50,7 @@
         transform: translate(-50%, 0);
       }
 
-      @descendent pop-transition {
-        transition: opacity .3s linear;
-      }
-
-      @descendent pop-enter, pop-leave {
+      @descendent pop-enter, pop-leave-active {
         opacity: 0;
       }
     }
@@ -74,6 +73,12 @@
         type: String,
         default: ''
       }
+    },
+
+    data() {
+      return {
+        visible: false
+      };
     },
 
     computed: {
